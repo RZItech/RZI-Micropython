@@ -24,5 +24,6 @@ jobs:
     - name: cd ../../
       run: cd ../../
     - name: cd micropython/ports/esp32
-      run: 
+      run: cd micropython/ports/esp32 && make USER_C_MODULES=../../../../Modules/micropython.cmake
+
 
