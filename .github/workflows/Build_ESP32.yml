@@ -22,7 +22,7 @@ jobs:
     - name: . $HOME/esp/esp-idf/export.sh
       run: . $HOME/esp/esp-idf/export.sh
     - name: cd ../../
-      run: cd ../../
+      run: cd / && tree
     - name: cd micropython/ports/esp32
       run: cd /micropython/ports/esp32 && make USER_C_MODULES=../../../../Modules/micropython.cmake
 
