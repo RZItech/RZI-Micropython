@@ -22,8 +22,8 @@ jobs:
     - name: . $HOME/esp/esp-idf/export.sh
       run: . $HOME/esp/esp-idf/export.sh
     - name: cd ../../
-      run: cd / && tree
+      run: cd $GITHUB_WORKSPACE	
     - name: cd micropython/ports/esp32
-      run: cd /micropython/ports/esp32 && make USER_C_MODULES=../../../../Modules/micropython.cmake
+      run: cd micropython/ports/esp32 && make USER_C_MODULES=../../../../Modules/micropython.cmake
 
 
